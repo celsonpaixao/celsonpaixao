@@ -1,0 +1,22 @@
+.titlelabel_container{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 30px;
+ div{
+    background-color: #3333;
+    padding: 10px 50px;
+    border-radius: 12px;
+
+    .text{
+        font-size: 14px;
+        font-weight: normal;
+        color: #D1D5DB;
+    }
+ }
+}

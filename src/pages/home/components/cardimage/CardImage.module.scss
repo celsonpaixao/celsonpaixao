@@ -1,0 +1,24 @@
+.cardimage_conatiner{
+    width: auto !important;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cardimage_image,
+.cardimage_back{
+    width: 440px;
+    height: 520px;
+}
+.cardimage_image{
+    background-image: url("../../../../assets/celsonimg.jpg");
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+}
+.cardimage_back{
+    background-color: #3333;
+    z-index: 0;
+    margin-top: 40px;
+    margin-right: 50px;
+}
