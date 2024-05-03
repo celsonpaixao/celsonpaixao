@@ -38,7 +38,7 @@ const Header = () => {
           <div className={style.avatar_img}></div>
           <h1>Hi, I’m Celson 👋</h1>
           <p>
-            I'm a Frontent and Mobile developer.... a developer passionate about
+            I'm a Frontend and Mobile developer.... a developer passionate about
             creating exceptional digital experiences. With experience in
             frontend development using technologies such as React.js and
             Next.js, and also in mobile development with Flutter, React Native

@@ -14,16 +14,7 @@ const AboutMe = () => {
           </div>
           <div className={style.about_info}>
             <h1>Curious about me? Here you have it:</h1>
-            <p>
-              I'm a frontend and mobile developer passionate about creating
-              exceptional digital experiences. With experience in React.js,
-              Next.js, Flutter, React Native and Kotlin, I'm focused on
-              transforming ideas into incredible digital products. User
-              experience is my priority, and I am committed to creating web and
-              mobile applications that are user-centric, visually appealing, and
-              highly functional. Let's work together to turn your ideas into
-              digital reality!
-            </p>
+          
             <p>
               I started my journey in 2021, during high school, when I started
               studying programming. Since then, I have continued to grow and
