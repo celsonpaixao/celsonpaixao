@@ -1,7 +1,15 @@
 import style from "./Exprerience.module.scss";
 import mamboologo from "../../../../assets/experience_image/mamboologo.png";
 import TitleLabel from "../titlelabel/Titlelabe";
+
+import React, { useEffect } from "react";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Experience = () => {
+   useEffect(() => {
+     AOS.init();
+   }, []);
   const experiences = [
     {
       image: mamboologo,
@@ -17,7 +25,12 @@ const Experience = () => {
     },
   ];
   return (
-    <div className="container" id="experience">
+    <div
+      className="container"
+      id="experience"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div className={style.experience_container}>
         <TitleLabel text={"Experience"} />
 

@@ -1,9 +1,20 @@
+import { useEffect } from "react";
 import CardImage from "../cardimage/CardImage";
 import TitleLabel from "../titlelabel/Titlelabe";
 import style from "./AboutMe.module.scss";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const AboutMe = () => {
+   useEffect(() => {
+     AOS.init();
+   }, []);
   return (
-    <div id="about" className="container">
+    <div
+      id="about"
+      className="container"
+      data-aos="fade-up"
+      data-aos-duration="500"
+    >
       <div className={style.about_container}>
         <TitleLabel text={"About Me"} />
 
@@ -13,7 +24,7 @@ const AboutMe = () => {
           </div>
           <div className={style.about_info}>
             <h1>Curious about me? Here you have it:</h1>
-          
+
             <p>
               I started my journey in 2021, during high school, when I started
               studying programming. Since then, I have continued to grow and
@@ -23,7 +34,7 @@ const AboutMe = () => {
               ideas into incredible digital products. User experience is my
               priority, and I am committed to creating web and mobile
               applications that are user-centric, visually appealing, and highly
-              functional. 
+              functional.
             </p>
             <p>
               I am trying to learn and evolve everyday by taking up new

@@ -25,5 +25,13 @@
     background-color: transparent;
     border: none;
     color: #d1d5db;
+    transition: all .3s;
+    cursor: pointer;
   }
+}
+.copy_success {
+  color: rgb(72, 251, 72);
+  margin-left: 5px;
+  font-size: 14px;
+  transition: all .3s;
 }
