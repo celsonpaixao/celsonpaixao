@@ -5,7 +5,6 @@ import { IoCopyOutline } from "react-icons/io5";
 import { IoCallOutline } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import style from "./Footer.module.scss";
-// importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 

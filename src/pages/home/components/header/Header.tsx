@@ -6,7 +6,7 @@ import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { useEffect } from "react";
 import cv from "../../../../assets/Currículo Celson.pdf";
-// importing aos
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Header = () => {
