@@ -108,6 +108,10 @@ const Skills_Slide = () => {
       image: _yarn,
     },
   ];
+  const skillsChunk1 = skills1.slice(0, 4);
+  const skillsChunk2 = skills1.slice(4, 8);
+  const skillsChunk3 = skills2.slice(0, 4);
+  const skillsChunk4 = skills2.slice(4, 8);
   return (
     <div>
       <Swiper
@@ -117,6 +121,7 @@ const Skills_Slide = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
+        className={style.slide}
       >
         <SwiperSlide>
           <div className={style.container_slide}>
@@ -135,6 +140,73 @@ const Skills_Slide = () => {
         <SwiperSlide>
           <div className={style.container_slide}>
             {skills2.map((item, index) => (
+              <div key={index} className={style.card}>
+                <div
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  className={style.card_image}
+                ></div>
+
+                <p>{item.titile}</p>
+              </div>
+            ))}
+          </div>
+        </SwiperSlide>
+      </Swiper>
+
+      <Swiper
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className={style.slide_celular}
+      >
+        <SwiperSlide>
+          <div className={style.container_slide}>
+            {skillsChunk1.map((item, index) => (
+              <div key={index} className={style.card}>
+                <div
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  className={style.card_image}
+                ></div>
+
+                <p>{item.titile}</p>
+              </div>
+            ))}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className={style.slide_celular}>
+          <div className={style.container_slide}>
+            {skillsChunk2.map((item, index) => (
+              <div key={index} className={style.card}>
+                <div
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  className={style.card_image}
+                ></div>
+
+                <p>{item.titile}</p>
+              </div>
+            ))}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={style.container_slide}>
+            {skillsChunk3.map((item, index) => (
+              <div key={index} className={style.card}>
+                <div
+                  style={{ backgroundImage: `url(${item.image})` }}
+                  className={style.card_image}
+                ></div>
+
+                <p>{item.titile}</p>
+              </div>
+            ))}
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className={style.container_slide}>
+            {skillsChunk4.map((item, index) => (
               <div key={index} className={style.card}>
                 <div
                   style={{ backgroundImage: `url(${item.image})` }}
