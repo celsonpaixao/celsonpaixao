@@ -6,8 +6,7 @@ const AboutMe = () => {
     <div id="about" className="container">
       <div className={style.about_container}>
         <TitleLabel text={"About Me"} />
-        <div className={style.color_blur1}></div>
-        <div className={style.color_blur2}></div>
+
         <div className={style.about_body}>
           <div className={style.about_image}>
             <CardImage />
@@ -24,8 +23,7 @@ const AboutMe = () => {
               ideas into incredible digital products. User experience is my
               priority, and I am committed to creating web and mobile
               applications that are user-centric, visually appealing, and highly
-              functional. Let's work together to turn your ideas into digital
-              reality!
+              functional. 
             </p>
             <p>
               I am trying to learn and evolve everyday by taking up new

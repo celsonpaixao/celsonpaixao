@@ -1,0 +1,17 @@
+.works_conatainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #d1d5db;
+  gap: 40px;
+}
+.works_body {
+  width: 80%;
+  flex-direction: row;
+  align-items: center !important;
+  justify-content: center !important;
+}
