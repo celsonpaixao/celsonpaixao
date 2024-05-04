@@ -15,20 +15,17 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-
 }
 .experience_card {
-  width: 900px;
+  width: 90%;
   height: 200px;
   background-color: #3333;
   border-radius: 20px;
-  padding: 10px 50px;
   display: flex;
   flex-direction: row !important;
   align-items: start;
   justify-content: space-between;
   padding: 40px 30px;
-
 
   div {
     display: flex;
@@ -42,17 +39,38 @@
     font-size: 16px;
     font-weight: 300;
   }
-cursor: pointer;
-transition: all .3s;
-  &:hover{
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
     transform: scale(1.06);
   }
 }
-
 
 .experience_card_image div {
   width: 64px;
   height: 64px;
   background-repeat: no-repeat !important;
   background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .experience_card {
+    padding: 20px ;
+    width: 100%;
+    font-size: 10px;
+    gap: 10px;
+    h1 {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+    div{
+   
+    }
+  }
+  .experience_card_image {
+   transform: scale(.8);
+   
+  }
 }

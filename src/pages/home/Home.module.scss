@@ -4,8 +4,21 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5vw;
 }
+
+.color_blur0 {
+  background-image: radial-gradient(closest-side, #9d00ff, #00000000);
+  width: 593px;
+  height: 593px;
+  position: absolute;
+  top: -244px;
+  filter: blur(200px);
+  opacity: 50%;
+  z-index: 0;
+}
+
 .color_blur1 {
   background-image: radial-gradient(closest-side, #9d00ff, #00000000);
   width: 393px;
@@ -89,3 +102,22 @@
   z-index: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .home_container {
+    gap: 10px;
+  }
+
+  .color_blur0,
+  .color_blur1,
+  .color_blur2,
+  .color_blur4,
+  .color_blur3,
+  .color_blur4,
+  .color_blur5,
+  .color_blur6,
+  .color_blur7 {
+    width: 393px;
+    height: 393px;
+    opacity: 50% !important;
+  }
+}

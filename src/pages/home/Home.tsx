@@ -9,6 +9,7 @@ import style from "./Home.module.scss"
 const Home = () => {
   return (
     <div className={style.home_container}>
+      <div className={style.color_blur0}></div>
       <div className={style.color_blur1}></div>
       <div className={style.color_blur2}></div>
       <div className={style.color_blur3}></div>

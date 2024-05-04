@@ -2,33 +2,48 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import style from "./Works_slide.module.scss";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { FaGithub, FaYoutube } from "react-icons/fa";
 const WorksSlides = () => {
   const works = [
     {
-      title: "Title Project",
+      title: "📱 Apartaments App with Flutter",
       description: "Description for the project",
-      imagebanner: "https://flowbite.com/docs/images/carousel/carousel-1.svg",
-      project_url: "",
-      tags: ["Tag1", "Tag2", "Tag3", "Tag4"],
+      imagebanner: "src/assets/works_banners/8.jpg",
+      youtube: "https://youtu.be/aKN8mQuDmEM?si=KGa0K1RBPwgWyijl",
+      project_url:
+        "https://github.com/celsonpaixao/youtube-flutter/tree/main/apartament_app",
+      tags: ["Flutter", "Dart", "Android", "MVC"],
     },
     {
-      title: "Title Project",
+      title: "📱Ui App Notes with Flutter",
       description: "Description for the project",
-      imagebanner: "https://flowbite.com/docs/images/carousel/carousel-1.svg",
-      project_url: "",
-      tags: ["Tag1", "Tag2", "Tag3", "Tag4"],
+      imagebanner: "src/assets/works_banners/9.jpg",
+      youtube: "",
+      project_url: "https://github.com/celsonpaixao/notes-app-ui",
+      tags: ["Flutter", "Dart", "Android", "MVC"],
+    },
+    {
+      title: "📱Ui App Mangas with Flutter",
+      description: "Description for the project",
+      imagebanner: "src/assets/works_banners/4.jpg",
+      youtube: "https://www.youtube.com/watch?v=LqJf1OC70U8&t=6s",
+      project_url:
+        "https://github.com/celsonpaixao/youtube-flutter/tree/main/aplicativo_de_manga",
+      tags: ["Flutter", "Dart", "Android", "MVC"],
     },
   ];
   return (
-    <div >
+    <div>
       <Swiper
         className={style.container_slide}
         autoplay={{
-          delay: 2500,
+          delay: 10000,
           disableOnInteraction: false,
         }}
+        loop={true}
         slidesPerView={1}
         navigation={true}
+        spaceBetween={50}
         modules={[Autoplay, Pagination, Navigation]}
       >
         {works.map((item) => (
@@ -48,6 +63,14 @@ const WorksSlides = () => {
                     <li>{t}</li>
                   ))}
                 </ul>
+                <div className={style.work_links}>
+                  <a href={item.youtube} target="_black">
+                    <FaYoutube />
+                  </a>
+                  <a href={item.project_url} target="_black">
+                    <FaGithub />
+                  </a>
+                </div>
               </div>
             </div>
           </SwiperSlide>
