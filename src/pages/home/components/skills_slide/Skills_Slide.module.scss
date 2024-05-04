@@ -1,0 +1,20 @@
+.container_slide {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas com largura igual */
+  grid-template-rows: repeat(2, 1fr); /* 2 linhas com altura igual */
+  row-gap: 70px;
+  padding: 80px;
+}
+
+.card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card_image {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
