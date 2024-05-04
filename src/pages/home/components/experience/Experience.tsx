@@ -2,7 +2,7 @@ import style from "./Exprerience.module.scss";
 import mamboologo from "../../../../assets/experience_image/mamboologo.png";
 import TitleLabel from "../titlelabel/Titlelabe";
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -1,5 +1,10 @@
-import style from "./Titlelabel.module.scss"
-const TitleLabel = ({ text }) => {
+import style from "./Titlelabel.module.scss";
+
+interface TitleLabelProps {
+  text: string;
+}
+
+const TitleLabel = ({ text }: TitleLabelProps) => {
   return (
     <div className={style.titlelabel_container}>
       <div>

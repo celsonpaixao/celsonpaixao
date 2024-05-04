@@ -14,10 +14,13 @@ const Footer = () => {
     AOS.init();
   }, []);
 
-  const [copySuccessEmail, setCopySuccessEmail] = useState("");
-  const [copySuccessPhone, setCopySuccessPhone] = useState("");
+  const [copySuccessEmail, setCopySuccessEmail] = useState<string>("");
+  const [copySuccessPhone, setCopySuccessPhone] = useState<string>("");
 
-  const handleCopyToClipboard = (text, setCopySuccess) => {
+  const handleCopyToClipboard = (
+    text: string,
+    setCopySuccess: React.Dispatch<React.SetStateAction<string>>
+  ) => {
     navigator.clipboard.writeText(text).then(
       () => {
         setCopySuccess("Copied!");
