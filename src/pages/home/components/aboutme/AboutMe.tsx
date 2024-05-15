@@ -4,7 +4,7 @@ import TitleLabel from "../titlelabel/Titlelabe";
 import style from "./AboutMe.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import AccordionAbout from "../acordionabout/AccordionAbout";
+
 const AboutMe = () => {
   useEffect(() => {
     AOS.init();
