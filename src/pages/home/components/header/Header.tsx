@@ -4,12 +4,18 @@ import { RiMapPin2Line } from "react-icons/ri";
 import { BiSolidCircle } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn, FaYoutube } from "react-icons/fa6";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import avatar from "../../../../assets/avater.jpg";
 import cv from "../../../../assets/Currículo Celson.pdf";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { IoIosMenu } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 const Header = () => {
+  const [navshow, setnavshow] = useState(false);
+  function ShowMobileNav() {
+    setnavshow(!navshow);
+  }
   useEffect(() => {
     AOS.init();
   }, []);
@@ -41,16 +47,66 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-
             <div>
-              <a href={cv} download="Celson Paixão Cv">
-                <button>Download CV</button>
+              <a
+                href={cv}
+                download="Celson Paixão Cv"
+                className={style.btn_down}
+              >
+                DownloadCV
               </a>
             </div>
           </nav>
+
+          <button onClick={ShowMobileNav} className={style.btn_menu}>
+            <IoIosMenu />
+          </button>
         </div>
+
+        <div
+          className={`${style.header_nav_container_mobile} ${
+            navshow ? style.open : ""
+          }`}
+        >
+          <button onClick={ShowMobileNav} className={style.btn_menu}>
+            <IoClose />
+          </button>
+          <nav>
+            <ul>
+              <li>
+                <a href="#about" onClick={ShowMobileNav}>
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#skills" onClick={ShowMobileNav}>
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#experience" onClick={ShowMobileNav}>
+                  Experience
+                </a>
+              </li>
+              <li>
+                <a href="#work" onClick={ShowMobileNav}>
+                  Work
+                </a>
+              </li>
+              <li>
+                <a href="#contact" onClick={ShowMobileNav}>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <a href={cv} download="Celson Paixão Cv" className={style.btn_down}>
+            DownloadCV
+          </a>
+        </div>
+
         <div className={style.header_body}>
-          <div className={style.avatar_img}></div>
+          <img src={avatar} alt="avatar" className={style.avatar_img} />
           <h1>Hi, I’m Celson 👋</h1>
           <p>
             I'm a Frontend and Mobile developer.... a developer passionate about

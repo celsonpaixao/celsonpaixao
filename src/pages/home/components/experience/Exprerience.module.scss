@@ -26,38 +26,37 @@
   align-items: start;
   justify-content: space-between;
   padding: 40px 30px;
-
+  font-size: 14px;
+  overflow: hidden;
+  gap: 30px;
   div {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
   h1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   h3 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
   }
   cursor: pointer;
   transition: all 0.3s;
-  &:hover {
-    transform: scale(1.06);
-  }
 }
 
-.experience_card_image div {
-  width: 64px;
-  height: 64px;
-  background-repeat: no-repeat !important;
-  background-size: cover;
+.experience_card_image {
+  width: 50px !important;
+  height: 50px !important;
 }
 
 @media screen and (max-width: 768px) {
   .experience_card {
-    padding: 20px ;
+    padding: 20px;
     width: 100%;
+    height: auto;
     font-size: 10px;
+    flex-direction: column !important;
     gap: 10px;
     h1 {
       font-size: 14px;
@@ -65,12 +64,8 @@
     h3 {
       font-size: 12px;
     }
-    div{
-   
-    }
   }
   .experience_card_image {
-   transform: scale(.8);
-   
+    transform: scale(0.8);
   }
 }

@@ -1,21 +1,21 @@
 import style from "./Skills_Slide.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import _javascript from "../../../../assets/skills_images/Javascript.png";
-import _typescript from "../../../../assets/skills_images/TypeScript.png";
-import _react from "../../../../assets/skills_images/React.png";
-import _node from "../../../../assets/skills_images/Nodejs.png";
-import _sass from "../../../../assets/skills_images/Sass.png";
-import _git from "../../../../assets/skills_images/Git.png";
-import _github from "../../../../assets/skills_images/Github.png";
-import _gitlab from "../../../../assets/skills_images/Gitlab.png";
-import _bootstap from "../../../../assets/skills_images/Bootstrap.png";
-import _next from "../../../../assets/skills_images/Nextjs.png";
-import _nodemon from "../../../../assets/skills_images/Nodemon.png";
-import _insomnia from "../../../../assets/skills_images/Insomnia.png";
-import _dart from "../../../../assets/skills_images/Dart.png";
-import _flutter from "../../../../assets/skills_images/Flutter.png";
-import _kotlin from "../../../../assets/skills_images/Kotlin.png";
-import _mongodb from "../../../../assets/skills_images/MongoDB.png";
+import _javascript from "../../../../assets/skills_images/javasrecipt.png";
+import _typescript from "../../../../assets/skills_images/typescript.png";
+import _react from "../../../../assets/skills_images/reactjs.png";
+import _node from "../../../../assets/skills_images/nodejs.png";
+import _sass from "../../../../assets/skills_images/sass.png";
+import _git from "../../../../assets/skills_images/git.png";
+import _github from "../../../../assets/skills_images/github.png";
+import _gitlab from "../../../../assets/skills_images/gitlab.png";
+import _bootstap from "../../../../assets/skills_images/bootstrap.png";
+// import _next from "../../../../assets/skills_images/Nextjs.png";
+// import _nodemon from "../../../../assets/skills_images/nodemon.png";
+import _insomnia from "../../../../assets/skills_images/insomnia.png";
+import _dart from "../../../../assets/skills_images/dart.png";
+import _flutter from "../../../../assets/skills_images/flutter.png";
+import _kotlin from "../../../../assets/skills_images/kotlin.png";
+import _mongodb from "../../../../assets/skills_images/mongodb.png";
 import _postgres from "../../../../assets/skills_images/PostgreSQL.png";
 import _firebase from "../../../../assets/skills_images/firebase.png";
 import _yarn from "../../../../assets/skills_images/yarn.png";
@@ -45,10 +45,7 @@ const Skills_Slide = () => {
       titile: "React Js",
       image: _react,
     },
-    {
-      titile: "Next Js",
-      image: _next,
-    },
+   
     {
       titile: "Git",
       image: _git,
@@ -95,10 +92,7 @@ const Skills_Slide = () => {
       titile: "Node Js",
       image: _node,
     },
-    {
-      titile: "Nodemon",
-      image: _nodemon,
-    },
+  
     {
       titile: "Insomnia",
       image: _insomnia,
