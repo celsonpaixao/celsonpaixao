@@ -4,24 +4,24 @@ import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 // Importação das imagens
-import javascript from "../../../../assets/skills_images/javasrecipt.png";
-import typescript from "../../../../assets/skills_images/typescript.png";
-import react from "../../../../assets/skills_images/reactjs.png";
-import node from "../../../../assets/skills_images/nodejs.png";
-import sass from "../../../../assets/skills_images/sass.png";
-import git from "../../../../assets/skills_images/git.png";
-import github from "../../../../assets/skills_images/github.png";
-import gitlab from "../../../../assets/skills_images/gitlab.png";
-import bootstrap from "../../../../assets/skills_images/bootstrap.png";
-import insomnia from "../../../../assets/skills_images/insomnia.png";
-import dart from "../../../../assets/skills_images/dart.png";
-import flutter from "../../../../assets/skills_images/flutter.png";
-import kotlin from "../../../../assets/skills_images/kotlin.png";
-import mongodb from "../../../../assets/skills_images/mongodb.png";
-import postgres from "../../../../assets/skills_images/PostgreSQL.png";
-import firebase from "../../../../assets/skills_images/firebase.png";
-import yarn from "../../../../assets/skills_images/yarn.png";
-import npm from "../../../../assets/skills_images/npm.png";
+import javascript from "@assets/skills_images/javasrecipt.png";
+import typescript from "@assets/skills_images/typescript.png";
+import react from "@assets/skills_images/reactjs.png";
+import node from "@assets/skills_images/nodejs.png";
+import sass from "@assets/skills_images/sass.png";
+import git from "@assets/skills_images/git.png";
+import github from "@assets/skills_images/github.png";
+import gitlab from "@assets/skills_images/gitlab.png";
+import bootstrap from "@assets/skills_images/bootstrap.png";
+import insomnia from "@assets/skills_images/insomnia.png";
+import dart from "@assets/skills_images/dart.png";
+import flutter from "@assets/skills_images/flutter.png";
+import kotlin from "@assets/skills_images/kotlin.png";
+import mongodb from "@assets/skills_images/mongodb.png";
+import postgres from "@assets/skills_images/PostgreSQL.png";
+import firebase from "@assets/skills_images/firebase.png";
+import yarn from "@assets/skills_images/yarn.png";
+import npm from "@assets/skills_images/npm.png";
 
 interface Skill {
   title: string;
@@ -72,10 +72,14 @@ const Skills_Slide: React.FC = () => {
         className={style.slide}
       >
         <SwiperSlide>
-          <div className={style.container_slide}>{renderSlides(skills.slice(0, 9))}</div>
+          <div className={style.container_slide}>
+            {renderSlides(skills.slice(0, 9))}
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className={style.container_slide}>{renderSlides(skills.slice(9))}</div>
+          <div className={style.container_slide}>
+            {renderSlides(skills.slice(9))}
+          </div>
         </SwiperSlide>
       </Swiper>
 
