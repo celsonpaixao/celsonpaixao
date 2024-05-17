@@ -18,14 +18,12 @@ const AboutMe = () => {
     >
       <div className={style.about_container}>
         <TitleLabel text={"About Me"} />
-
         <div className={style.about_body}>
           <div className={style.about_image}>
             <CardImage />
           </div>
           <div className={style.about_info}>
             <h1>Curious about me? Here you have it:</h1>
-
             <p>
               I started my journey in 2021, during high school, when I started
               studying programming. Since then, I have continued to grow and
@@ -43,14 +41,12 @@ const AboutMe = () => {
               learning about user psychology and make a valuable user experience
               for all type of users.
             </p>
-
             <h3>Finally, some quick bits about me.</h3>
             <ul>
               <li>Technical high school in IT</li>
               <li>Mobile Developer</li>
               <li>Frontend Developer</li>
             </ul>
-
             <p>
               One last thing, I'm available for freelance work, so feel free to
               reach out and say hello! I promise I don't bite 😉😉
