@@ -3,26 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-// Importação das imagens
-import javascript from "@assets/skills_images/javasrecipt.png";
-import typescript from "@assets/skills_images/typescript.png";
-import react from "@assets/skills_images/reactjs.png";
-import node from "@assets/skills_images/nodejs.png";
-import sass from "@assets/skills_images/sass.png";
-import git from "@assets/skills_images/git.png";
-import github from "@assets/skills_images/github.png";
-import gitlab from "@assets/skills_images/gitlab.png";
-import bootstrap from "@assets/skills_images/bootstrap.png";
-import insomnia from "@assets/skills_images/insomnia.png";
-import dart from "@assets/skills_images/dart.png";
-import flutter from "@assets/skills_images/flutter.png";
-import kotlin from "@assets/skills_images/kotlin.png";
-import mongodb from "@assets/skills_images/mongodb.png";
-import postgres from "@assets/skills_images/PostgreSQL.png";
-import firebase from "@assets/skills_images/firebase.png";
-import yarn from "@assets/skills_images/yarn.png";
-import npm from "@assets/skills_images/npm.png";
-
 interface Skill {
   title: string;
   image: string;
@@ -31,33 +11,88 @@ interface Skill {
 // Component Skills_Slide
 const Skills_Slide: React.FC = () => {
   const skills: Skill[] = [
-    { title: "Javascript", image: javascript },
-    { title: "Typescript", image: typescript },
-    { title: "React Js", image: react },
-    { title: "Node Js", image: node },
-    { title: "Sass", image: sass },
-    { title: "Bootstrap", image: bootstrap },
-    { title: "Git", image: git },
-    { title: "GitHub", image: github },
-    { title: "GitLab", image: gitlab },
-    { title: "NPM", image: npm },
-    { title: "Kotlin", image: kotlin },
-    { title: "Dart", image: dart },
-    { title: "Flutter", image: flutter },
-    { title: "Firebase", image: firebase },
-    { title: "Postgres", image: postgres },
-    { title: "MongoDb", image: mongodb },
-    { title: "Insomnia", image: insomnia },
-    { title: "Yarn", image: yarn },
+    {
+      title: "Javascript",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png",
+    },
+    {
+      title: "Typescript",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1024px-Typescript_logo_2020.svg.png",
+    },
+    {
+      title: "React Js",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/180px-React_Logo_SVG.svg.png",
+    },
+    {
+      title: "Node Js",
+      image:
+        "https://static-00.iconduck.com/assets.00/node-js-icon-454x512-nztofx17.png",
+    },
+    {
+      title: "Sass",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png",
+    },
+    {
+      title: "Bootstrap",
+      image:
+        "https://user-images.githubusercontent.com/2327532/39481401-fa7d2992-4d30-11e8-886d-c4a3ee88147f.png",
+    },
+    {
+      title: "Git",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/2048px-Git_icon.svg.png",
+    },
+    {
+      title: "GitHub",
+      image: "https://cdn-icons-png.flaticon.com/512/25/25231.png",
+    },
+    {
+      title: "GitLab",
+      image:
+        "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png",
+    },
+    {
+      title: "Kotlin",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Kotlin_Icon.png/1200px-Kotlin_Icon.png",
+    },
+    {
+      title: "Dart",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Dart_logo.png/768px-Dart_logo.png",
+    },
+    {
+      title: "Flutter",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Flutter_logo.svg/2048px-Flutter_logo.svg.png",
+    },
+    {
+      title: "Firebase",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/1200px-Firebase_icon.svg.png",
+    },
+    {
+      title: "Postgres",
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/993px-Postgresql_elephant.svg.png",
+    },
+    {
+      title: "MongoDb",
+      image:
+        "https://cdn.icon-icons.com/icons2/2415/PNG/512/mongodb_original_wordmark_logo_icon_146425.png",
+    },
   ];
 
   const renderSlides = (skillsList: Skill[]) =>
     skillsList.map((item, index) => (
       <div key={index} className={style.card}>
-        <div
-          style={{ backgroundImage: `url(${item.image})` }}
-          className={style.card_image}
-        ></div>
+        
+
+        <img src={item.image} alt={item.title} className={style.card_image} />
         <p>{item.title}</p>
       </div>
     ));
