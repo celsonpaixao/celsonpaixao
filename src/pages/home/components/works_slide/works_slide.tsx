@@ -8,7 +8,7 @@ const WorksSlides = () => {
     {
       title: "📱 Apartaments App with Flutter",
       description: "Description for the project",
-      imagebanner: "src/assets/works_banners/8.jpg",
+      imagebanner: "https://github.com/celsonpaixao/youtube-flutter/blob/main/apartament_app/8.jpg?raw=true",
       youtube: "https://youtu.be/aKN8mQuDmEM?si=KGa0K1RBPwgWyijl",
       project_url:
         "https://github.com/celsonpaixao/youtube-flutter/tree/main/apartament_app",
@@ -17,7 +17,7 @@ const WorksSlides = () => {
     {
       title: "📱Ui App Notes with Flutter",
       description: "Description for the project",
-      imagebanner: "src/assets/works_banners/9.jpg",
+      imagebanner: "https://raw.githubusercontent.com/celsonpaixao/notes-app-ui/main/assets/images/9.jpg",
       youtube: "",
       project_url: "https://github.com/celsonpaixao/notes-app-ui",
       tags: ["Flutter", "Dart", "Android", "MVC"],
@@ -25,7 +25,7 @@ const WorksSlides = () => {
     {
       title: "📱Ui App Mangas with Flutter",
       description: "Description for the project",
-      imagebanner: "src/assets/works_banners/4.jpg",
+      imagebanner: "https://github.com/celsonpaixao/youtube-flutter/blob/main/aplicativo_de_manga/ThumbnailTamplate.jpg?raw=true",
       youtube: "https://www.youtube.com/watch?v=LqJf1OC70U8&t=6s",
       project_url:
         "https://github.com/celsonpaixao/youtube-flutter/tree/main/aplicativo_de_manga",
