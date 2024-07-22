@@ -48,11 +48,11 @@ const Footer = () => {
         </p>
         <div>
           <MdOutlineMail />
-          <h3>celson2020fernando@gmail.com</h3>
+          <h3>celson2020paixao@gmail.com</h3>
           <button
             onClick={() =>
               handleCopyToClipboard(
-                "celson2020fernando@gmail.com",
+                "celson2020paixao@gmail.com",
                 setCopySuccessEmail
               )
             }
