@@ -5,9 +5,9 @@ import style from "./Skills.module.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Skills = () => {
-   useEffect(() => {
-     AOS.init();
-   }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       className="container"

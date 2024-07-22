@@ -3,24 +3,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+  background-color: #0f0f0f;
 
-:root {
-  --grey600: #d1d5db;
+  div,
+  h1,
+  p,
+  h2,
+  ul,
+  li,
+  img,
+  nav,
+  h3,
+  h4,
+  a {
+    background-color: transparent;
+  }
 }
 
 .container {
   width: 100vw;
   padding: 0 60px;
   width: 100%;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
-
 }
 
 @media screen and (max-width: 768px) {
   .container {
     padding: 0 20px;
-
   }
 }
