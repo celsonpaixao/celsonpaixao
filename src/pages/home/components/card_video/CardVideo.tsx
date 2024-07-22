@@ -1,6 +1,6 @@
 import React from 'react';
 import style from "./CardVideo.module.scss"
-import { FaGithub, FaYoutube } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
 
 // Define a interface para as propriedades do componente
 interface CardVideoProps {
