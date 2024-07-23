@@ -22,7 +22,7 @@ const AboutMe = () => {
           <div className={style.about_image}>
             <CardImage />
           </div>
-          <div className={style.about_info}>
+          <div className={style.about_info}> 
             <h1>Curious about me? Here you have it:</h1>
             <p>
               I started my journey in 2021, during high school, when I started

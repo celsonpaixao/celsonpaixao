@@ -46,20 +46,34 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+ .about_body{
+  gap: 5px;
+ }
+  .about_info {
+    width: 750px;
+  }
+  .about_info h1 {
+    font-size: 15px;
+  }
+  .about_body p {
+    font-size: 14px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .about_body {
     gap: 10px;
   }
-  .about_image{
+  .about_image {
     display: none;
   }
- .about_info{
-    h1{
-        font-size: 28px;
+  .about_info {
+    h1 {
+      font-size: 28px;
     }
-    p{
-        font-size: 14px;
+    p {
+      font-size: 14px;
     }
- }
+  }
 }

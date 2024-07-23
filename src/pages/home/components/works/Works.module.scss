@@ -19,3 +19,17 @@
   align-items: center !important;
   justify-content: center !important;
 }
+
+@media screen and (max-width: 1024px) {
+  .works_body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .works_body {
+    display: flex;
+    flex-direction: column;
+  }
+}
