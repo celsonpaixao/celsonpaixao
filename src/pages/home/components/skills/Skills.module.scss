@@ -13,12 +13,52 @@
   align-items: center;
   justify-content: center;
   gap: 20px !important;
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width:768px) {
-  .skills_contant{
-    p{
+.skills_contant_body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+}
+.skills_contant_body_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+}
+.skills_contant_body_item img {
+  width: 80px;
+}
+
+@media screen and (max-width: 1024px) {
+  .skills_contant_body_item img {
+    width: 50px;
+  }
+  .skills_contant_body_item p{
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .skills_contant {
+    p {
       text-align: center;
     }
   }
+  .skills_contant_body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: 30px;
+    column-gap: 20px;
+  }
+  .skills_contant_body_item img {
+    width: 35px;
+  }
+  
 }
