@@ -10,7 +10,6 @@ import cv from "../../../../assets/Currículo Celson.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosMenu } from "react-icons/io";
-import { IoCloseOutline } from "react-icons/io5";
 const Header = () => {
   const [navshow, setnavshow] = useState(false);
   function ShowMobileNav() {
