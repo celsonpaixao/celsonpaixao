@@ -124,7 +124,8 @@
 }
 
 .header_nav_container_mobile {
-  background-color: #0f0f0f;
+  // background-color: #0f0f0f;
+  backdrop-filter: blur(20px);
   width: 100%;
   height: 0; /* Inicialmente escondido */
   overflow: hidden;
