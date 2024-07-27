@@ -10,7 +10,13 @@ import cv from "../../../../assets/Currículo Celson.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosMenu } from "react-icons/io";
+
+import { IoClose } from "react-icons/io5";
+import SwitchLang from "../switchlang/SwitchLang";
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+   const { t } = useTranslation();
   const [navshow, setnavshow] = useState(false);
   function ShowMobileNav() {
     setnavshow(!navshow);
@@ -30,7 +36,7 @@ const Header = () => {
             <div>
               <ul>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#about">{t("header_nav_tag_About")}</a>
                 </li>
                 <li>
                   <a href="#skills">Skills</a>
@@ -105,6 +111,7 @@ const Header = () => {
         </div>
 
         <div className={style.header_body}>
+          <SwitchLang/>
           <img src={avatar} alt="avatar" className={style.avatar_img} />
           <h1>Hi, I’m Celson 👋</h1>
           <p>
