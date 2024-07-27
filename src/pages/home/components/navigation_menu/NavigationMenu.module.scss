@@ -47,7 +47,7 @@
 .header_nav_container_end div ul li a {
   text-decoration: none;
   font-size: 16px;
- 
+
   color: #d1d5db;
   font-weight: 400;
   display: block; /* Faz com que o link ocupe todo o espaço do li */
@@ -92,6 +92,7 @@
   padding: 0; /* Inicialmente sem padding */
   transition: height 0.5s ease, padding 0.5s ease; /* Transição suave para altura e padding */
   backdrop-filter: blur(20px);
+    background-color: #0f0f0fd2;
 }
 
 .header_nav_container_mobile.open {
