@@ -34,17 +34,13 @@ const Footer = () => {
   };
 
   return (
-    <div
-      id="contact"
-      className="container"
-      data-aos="fade-up"
-      data-aos-duration="500"
-    >
-      <div className={style.footer_container}>
-        <TitleLabel text={"Get in touch"} />
+    <div className={style.footer_container} id="contact">
+      <TitleLabel text={"Get in touch"} />
+      <div className="container">
         <p>
-          What’s next? Feel free to reach out to me if you're looking for a
-          designer or a developer, have a query, or simply want to connect.
+          Sinta-se à vontade para entrar em contato comigo se estiver procurando
+          um desenvolvedor, tiver alguma dúvida ou simplesmente quiser se
+          conectar.
         </p>
         <div>
           <MdOutlineMail />
@@ -77,8 +73,14 @@ const Footer = () => {
             <span className={style.copy_success}>{copySuccessPhone}</span>
           )}
         </div>
-        <p>You may also find me on these platforms!</p>
-        <FaLinkedin />
+        <p>Você também pode me encontrar nessas plataformas!</p>
+        <a
+        className={style.footer_container_icon}
+          href="https://www.linkedin.com/in/celson-paix%C3%A3o-1430b2276/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </a>
       </div>
     </div>
   );

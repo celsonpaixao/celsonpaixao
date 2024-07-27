@@ -24,29 +24,23 @@ const Experience = () => {
   const experiences: ExperienceType[] = [
     {
       image: mamboologo,
-      title: "FrontEnd & Mobile Developer",
-      nivel: "Intern",
+      title: "Desenvolvedor Front-End & Mobile",
+      nivel: "Júnior",
       competence: [
-        "Web application developer with ReactJs and NextJs",
-        "Mobile application developer (Android) with Flutter/Dart",
+        "Desenvolvedor de aplicações web com React.js e Next.js",
+        "Desenvolvedor de aplicações móveis (Android) com Flutter/Dart",
       ],
-      type_local: "Present",
-      start: "04 March 2024",
-      End: "04 September 2024",
+      type_local: "Presencial",
+      start: "2024-03-04",
+      End: "2024-09-04",
     },
   ];
 
   return (
-    <div
-      className="container"
-      id="experience"
-      data-aos="fade-up"
-      data-aos-duration="500"
-    >
-      <div className={style.experience_container}>
-        <TitleLabel text="Experience" />
-
-        <p>Here is a quick summary of my most recent experiences:</p>
+    <div className={style.experience_container} id="experience">
+      <TitleLabel text="Experiências" />
+      <div className="container">
+        <p className={style.experience_container_P}>{""}</p>
         <div className={style.experience_body}>
           {experiences.map((item) => (
             <div className={style.experience_card}>
@@ -65,8 +59,8 @@ const Experience = () => {
                 <h1>
                   {item.nivel} - {item.type_local}
                 </h1>
-                <h3>Start: {item.start}</h3>
-                <h3>End: {item.End}</h3>
+                <h3>Início: {item.start}</h3>
+                <h3>Fim: {item.End}</h3>
               </div>
             </div>
           ))}

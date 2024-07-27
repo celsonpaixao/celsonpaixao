@@ -4,11 +4,12 @@ import Skills from "./components/skills/Skills";
 import Experience from "./components/experience/Experience";
 import Works from "./components/works/Works";
 import Footer from "./components/footer/Footer";
-import style from "./Home.module.scss"
+import NavigationMenu from "./components/navigation_menu/NavigationMenu";
 
 const Home = () => {
   return (
-    <div className={style.home_container}>
+    <div className="home">
+      <NavigationMenu />
       <Header />
       <AboutMe />
       <Skills />

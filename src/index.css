@@ -3,33 +3,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.home {
   background-color: #0f0f0f;
+  display: flex;
+  flex-direction: column;
 
-  div,
-  h1,
-  p,
-  h2,
-  ul,
-  li,
-  img,
-  nav,
-  h3,
-  h4,
-  a {
-    background-color: transparent;
+}
+.container {
+  padding: 0 160px;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 100px;
   }
 }
-
-.container {
-  width: 100vw;
-  padding: 0 60px;
-  width: 100%;
-  transition: all 0.3s;
-  position: relative;
-}
-
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 }
