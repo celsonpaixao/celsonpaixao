@@ -89,31 +89,20 @@ const Skills = () => {
     AOS.init();
   }, []);
   return (
-    <div
-      className="container"
-      id="skills"
-      data-aos="fade-up"
-      data-aos-duration="500"
-    >
-      <div className={style.skills_container}>
-        <TitleLabel text={"Skills"} />
-        <div className={style.skills_contant}>
-          <p>
-            The skills, tools, and technologies I'm really good at for
-            development:
-          </p>
-
-         
-        </div>
-
+    <div className={style.skills_container} id="skills">
+      <div className="container">
+        <TitleLabel text={"Ferramentas e Tecnologias"} />
+        <p className={style.skills_container_P}>
+      {""}
+        </p>
         <div className={style.skills_contant_body}>
-            {skills.map((skil, index) => (
-              <div key={index} className={style.skills_contant_body_item} >
-                <img src={skil.image} alt={skil.title} />
-                <p>{skil.title}</p>
-              </div>
-            ))}
-          </div>
+          {skills.map((skil, index) => (
+            <div key={index} className={style.skills_contant_body_item}>
+              <img src={skil.image} alt={skil.title} />
+              <p>{skil.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

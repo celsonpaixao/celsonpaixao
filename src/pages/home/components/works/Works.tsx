@@ -31,14 +31,10 @@ const Works = () => {
   }, []);
 
   return (
-    <div
-      className="container"
-      data-aos="fade-up"
-      data-aos-duration="500"
-      id="work"
-    >
-      <div className={style.works_conatainer}>
-        <TitleLabel text={"Works"} />
+    <div className={style.works_conatainer} id="work">
+      <TitleLabel text={"Works"} />
+
+      <div className="container">
         <p>Some of the notable projects I have built and developed:</p>
         <div className={style.works_body}>
           {videos.map((video, index) => (
