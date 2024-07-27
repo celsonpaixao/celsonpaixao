@@ -10,9 +10,11 @@ import cv from "../../../../assets/Currículo Celson.pdf";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { IoIosMenu } from "react-icons/io";
+
 import { IoClose } from "react-icons/io5";
 import SwitchLang from "../switchlang/SwitchLang";
 import { useTranslation } from "react-i18next";
+
 const Header = () => {
    const { t } = useTranslation();
   const [navshow, setnavshow] = useState(false);
@@ -72,7 +74,7 @@ const Header = () => {
           }`}
         >
           <button onClick={ShowMobileNav} className={style.btn_menu}>
-            <IoClose />
+           x
           </button>
           <nav>
             <ul>
