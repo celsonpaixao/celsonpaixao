@@ -1,0 +1,16 @@
+{
+    "translation": {
+      "header_nav_tag_About": "Sobre",
+      "header_nav_tag_Skills": "Habilidades",
+      "header_nav_tag_Experience": "Experiência",
+      "header_nav_tag_Work": "Trabalho",
+      "header_nav_tag_Contact": "Contato",
+      "header_nav_tag_button_DownloadCV": "Baixar CV",
+  
+      "header_body_title_h1": "Oi, eu sou o Celson 👋",
+      "header_body_description": "Sou um desenvolvedor Frontend e Mobile... um desenvolvedor apaixonado por criar experiências digitais excepcionais. Com experiência em desenvolvimento frontend utilizando tecnologias como React.js e Next.js, e também em desenvolvimento mobile com Flutter, React Native e Kotlin, estou comprometido em criar aplicações web e mobile centradas no usuário, acessíveis, visualmente atraentes e responsivas. Minha profunda paixão por design e minha experiência em psicologia do usuário me permitem criar produtos digitais que não apenas atendem às necessidades dos usuários, mas também os encantam. Vamos trabalhar juntos para transformar suas ideias em realidade digital!",
+      "header_buton_contant_location": "   Luanda, Angola",
+      "header_buton_contant_on": "   Disponível para novos projetos"
+    }
+  }
+  
