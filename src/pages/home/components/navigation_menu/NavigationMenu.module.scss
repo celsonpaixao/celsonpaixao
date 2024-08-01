@@ -7,13 +7,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(10px);
   padding: 0 126px;
   z-index: 100;
   top: 0;
   left: 0;
   right: 0;
   position: fixed;
+  border-bottom: 0.5px solid #d1d5db;
 }
 
 /* Container dos itens da navegação */
@@ -92,14 +93,17 @@
   padding: 0; /* Inicialmente sem padding */
   transition: height 0.5s ease, padding 0.5s ease; /* Transição suave para altura e padding */
   backdrop-filter: blur(20px);
-    background-color: #0f0f0fd2;
+  background-color: #0f0f0fd2;
 }
 
 .header_nav_container_mobile.open {
   height: 100vh; /* Altura total da viewport quando ativo */
   padding: 20px 0; /* Adiciona padding quando ativo */
 }
-
+.logo{
+  cursor: pointer;
+  width: 100px;
+}
 /* Navegação para dispositivos móveis */
 nav {
   width: 100%;
@@ -132,7 +136,7 @@ nav ul li a {
 }
 
 /* Estilos para tamanhos de tela específicos */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .header_nav_container {
     padding: 0 100px;
     margin: 0 5px;
@@ -155,7 +159,7 @@ nav ul li a {
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .header_nav_container {
     padding: 0 30px; /* Ajusta o padding em telas menores */
   }
