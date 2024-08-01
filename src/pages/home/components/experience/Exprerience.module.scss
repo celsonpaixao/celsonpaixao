@@ -6,8 +6,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
-  gap: 40px;
+  
 }
 .experience_body {
   width: 90vw;
@@ -46,6 +45,10 @@
   transition: all 0.3s;
 }
 
+.atual_atext{
+  color: chartreuse;
+}
+
 .experience_card_image {
   width: 50px !important;
   height: 50px !important;
@@ -55,7 +58,11 @@
   
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
+
+  .experience_container {
+    height: 500px;
+  }
   .experience_card {
     padding: 20px;
     width: 100%;

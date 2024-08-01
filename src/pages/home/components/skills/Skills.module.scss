@@ -34,9 +34,9 @@
   width: 80px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .skills_container {
-    height: 50vh;
+    height: 450px;
   }
   .skills_contant_body_item img {
     width: 50px;
@@ -45,9 +45,10 @@
     display: none;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 768px) {
   .skills_container {
-    height: 600px;
+    height: 560px;
+ 
   }
   .skills_contant {
     p {

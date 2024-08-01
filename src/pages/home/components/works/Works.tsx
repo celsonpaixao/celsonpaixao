@@ -32,10 +32,10 @@ const Works = () => {
 
   return (
     <div className={style.works_conatainer} id="work">
-      <TitleLabel text={"Works"} />
+      <TitleLabel text={"Projetos"} />
 
       <div className="container">
-        <p>Some of the notable projects I have built and developed:</p>
+       
         <div className={style.works_body}>
           {videos.map((video, index) => (
             <CardVideo

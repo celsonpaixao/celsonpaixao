@@ -4,7 +4,7 @@ import { BiSolidCircle } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn, FaYoutube } from "react-icons/fa6";
 import { useEffect } from "react";
-import avatar from "../../../../assets/avater.jpg";
+// import avatar from "../../../../assets/avater.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -18,12 +18,12 @@ const Header = () => {
     <div className={style.header_conatiner} id="home">
       <div className="container">
         <div className={style.header_body}>
-          <img src={avatar} alt="avatar" className={style.avatar_img} />
+          {/* <img src={avatar} alt="avatar" className={style.avatar_img} /> */}
           <h1>
-            Olá...!
-            <br /> Meu nome é Celson 👋
+            Olá,eu sou  Celson 👋
+            <br /> Desenvolvedor Front-end & Mobile
           </h1>
-          <p>
+          {/* <p>
             Sou desenvolvedor Frontend e Mobile, apaixonado por criar
             experiências digitais incríveis. 🌟
             <br /> Com expertise em React.js e Next.js para frontend, e Flutter,
@@ -35,7 +35,7 @@ const Header = () => {
             <br />
             Vamos transformar suas ideias em uma realidade digital inesquecível!
             🌐🚀
-          </p>
+          </p> */}
           <div className={style.header_buton}>
             <div>
               <div className={style.header_buton_contant}>

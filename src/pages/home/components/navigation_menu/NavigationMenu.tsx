@@ -1,4 +1,4 @@
-import Logo from "../../../../assets/logo.png";
+import Logo from "../../../../assets/logo_upscayl_4x_realesrgan-x4plus.png";
 import cv from "../../../../assets/Currículo Celson.pdf";
 import style from "./NavigationMenu.module.scss";
 import { IoIosMenu } from "react-icons/io";
@@ -13,7 +13,9 @@ function NavigationMenu() {
   return (
     <div className={style.header_nav_container}>
       <div>
-        <img src={Logo} alt="Logo" className={style.logo} />
+        <a href="#home">
+          <img src={Logo} alt="Logo" className={style.logo} />
+        </a>
       </div>
       <nav className={style.header_nav_container_end}>
         <div>
@@ -31,7 +33,7 @@ function NavigationMenu() {
               <a href="#experience">Experiência</a>
             </li>
             <li>
-              <a href="#work">Trabalho</a>
+              <a href="#work">Projetos</a>
             </li>
             <li>
               <a href="#contact">Contato</a>
@@ -79,7 +81,7 @@ function NavigationMenu() {
             </li>
             <li>
               <a href="#work" onClick={ShowMobileNav}>
-                Trabalho
+                Projetos
               </a>
             </li>
             <li>
