@@ -5,7 +5,8 @@ import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import experience_datas from "../../../../data/experience_data";
+import ExperienceTimeLine from "../experiece_timeline";
+
 
 const Experience = () => {
   useEffect(() => {
@@ -17,7 +18,9 @@ const Experience = () => {
       <TitleLabel text="Experiências" />
       <div className="container">
         <p className={style.experience_container_P}>{""}</p>
-        <div className={style.experience_body}>
+        <ExperienceTimeLine />
+        {/* <div className={style.experience_body}>
+         
           {experience_datas.map((item) => (
             <div className={style.experience_card}>
               <div className={style.experience_card_image}>
@@ -40,7 +43,7 @@ const Experience = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
   );
