@@ -1,0 +1,98 @@
+.experience_card {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px 30px;
+  font-size: 14px;
+  overflow: hidden;
+  color: #d1d5db;
+  background-color: aquamarine;
+  gap: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.experience_card div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience_card h1 {
+  font-size: 16px;
+}
+
+.experience_card h3 {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.atual_atext {
+  color: chartreuse;
+}
+
+.experience_card_image {
+  width: 50px;
+  height: 50px;
+}
+
+.experience_container_P {
+  margin: 35px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .experience_container {
+    height: 500px;
+  }
+
+  .experience_card {
+    padding: 20px;
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    flex-direction: column;
+    gap: 15px;
+    h1 {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .experience_card_image {
+    width: 45px;
+    height: 45px;
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .experience_card {
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    width: 70vw;
+    padding: 15px;
+    font-size: 12px;
+    gap: 10px;
+    h1 {
+      font-size: 14px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+  }
+
+  .experience_card_image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.timelineLeft {
+  align-items: flex-start;
+}

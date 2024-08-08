@@ -1,0 +1,167 @@
+/* Container principal da navegação */
+.header_nav_container {
+  width: 100%;
+  font-size: 20px;
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  padding: 0 126px;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  border-bottom: 0.1px solid #d1d5db63;
+}
+
+/* Container dos itens da navegação */
+.header_nav_container_end {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.header_nav_container_end ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 40px;
+}
+
+.header_nav_container_end div ul li {
+  list-style: none;
+  transition: background-color 0.3s, transform 0.3s; /* Suaviza a transição de cor e transformação */
+  border-radius: 5px;
+
+  text-align: center;
+  cursor: pointer;
+}
+
+.header_nav_container_end div ul li a {
+  text-decoration: none;
+  font-size: 16px;
+
+  color: #d1d5db;
+  font-weight: 400;
+  display: block; /* Faz com que o link ocupe todo o espaço do li */
+  height: 100%; /* Garante que o link ocupe toda a altura do li */
+  line-height: 30px; /* Alinha o texto verticalmente no centro */
+}
+
+/* Estilo do botão "descer" */
+.btn_down {
+  border: none;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: #d1d5db;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Botão de menu (para dispositivos móveis) */
+.btn_menu {
+  background-color: transparent;
+  border: none;
+  color: #d1d5db;
+  font-size: 30px;
+  display: none; /* Inicialmente escondido */
+}
+
+/* Container da navegação móvel */
+.header_nav_container_mobile {
+  width: 100%;
+  height: 0; /* Inicialmente escondido */
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 0; /* Inicialmente sem padding */
+  transition: height 0.5s ease, padding 0.5s ease; /* Transição suave para altura e padding */
+  backdrop-filter: blur(20px);
+  background-color: #0f0f0fd2;
+}
+
+.header_nav_container_mobile.open {
+  height: 100vh; /* Altura total da viewport quando ativo */
+  padding: 20px 0; /* Adiciona padding quando ativo */
+}
+.logo {
+  cursor: pointer;
+  width: 100px;
+}
+/* Navegação para dispositivos móveis */
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  text-align: center;
+  padding: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+}
+
+nav ul li:hover {
+  background-color: rgba(51, 51, 51, 0.5); /* Cor de fundo ao passar o mouse */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d1d5db;
+}
+
+/* Estilos para tamanhos de tela específicos */
+@media screen and (max-width: 1024px) {
+  .header_nav_container {
+    padding: 0 100px;
+    margin: 0 5px;
+  }
+
+  .header_nav_container_end {
+    display: none; /* Esconde a navegação principal em telas menores */
+  }
+
+  .btn_menu {
+    display: block; /* Mostra o botão de menu em telas menores */
+  }
+
+  .header_nav_container_mobile {
+    display: flex; /* Mostra a navegação móvel */
+  }
+
+  .logo {
+    width: 70px; /* Ajusta o tamanho do logo */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_nav_container {
+    padding: 0 30px; /* Ajusta o padding em telas menores */
+  }
+}
