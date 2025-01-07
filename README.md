@@ -2,21 +2,20 @@
 
 Welcome to my GitHub profile! I am a passionate **mobile developer**, focused on creating impactful and efficient apps. 🚀 Here, you'll find projects that showcase my skills and my journey as a developer.
 
----
 
 ## 📲 **Connect with Me**
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/celsonpaixa0/)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celsonpaixao/)
 
----
+
 
 ## 📊 **GitHub Stats**
 
 ![Celson's GitHub Stats](https://github-readme-stats.vercel.app/api?username=celsonpaixao&show_icons=true&theme=radical)
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=celsonpaixao&layout=compact&theme=radical)
 
----
+
 
 ## 🛠️ **Technologies I Use**
 
@@ -30,7 +29,7 @@ Welcome to my GitHub profile! I am a passionate **mobile developer**, focused on
  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"/>
 </div>
 
----
+
 
 ## 💻 **Development Tools**
 
