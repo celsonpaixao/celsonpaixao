@@ -3,11 +3,12 @@
 Bem-vindo ao meu perfil do GitHub! Sou um **desenvolvedor mobile** apaixonado, focado em criar aplicativos impactantes e eficientes. 🚀 Aqui você encontrará projetos que mostram minhas habilidades e minha jornada como desenvolvedor.
 
 
-
 ## 📲 **Conecte-se Comigo**
 
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/celsonpaixa0/)
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/celsonpaixao/)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@celsonpaixa0)
+[![Website](https://img.shields.io/badge/Website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://celsonpaixao.vercel.app/)
 
 
 ## 📊 **Estatísticas do GitHub**
